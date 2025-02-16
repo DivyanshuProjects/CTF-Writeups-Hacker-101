@@ -67,13 +67,13 @@ Executing the command successfully returned an email address, which was a crucia
 However, the retrieved flag was missing the `FLAG$` suffix. The challenge hint suggested manually appending it:
 
 ```
-FLAG{captured_successfully}$
+{'email':'zseano@ofcourse.com','flag':'^FLAG^7cf095fe3d1562a95054dedcf6960eb68559619fb3357bdf8d6ddb8b1411e6f4$'}
 ```
 
 Executing the command successfully returned the flag. However, the flag was missing the `FLAG$` suffix. The challenge hint suggested manually appending it:
 
 ```
-FLAG{captured_successfully}$
+'flag':'^FLAG^7cf095fe3d1562a95054dedcf6960eb68559619fb3357bdf8d6ddb8b1411e6f4$
 ```
 
  Lessons Learned
@@ -100,7 +100,8 @@ If the request still fails, consider:
 
 *Below is an image showing the request and response from Burp Suite or terminal output:*
 
-[Insert Screenshot Here]
+![image](https://github.com/user-attachments/assets/27aa791d-241c-4282-ac2b-f012c79b2a21)
+
 
  Conclusion
 
