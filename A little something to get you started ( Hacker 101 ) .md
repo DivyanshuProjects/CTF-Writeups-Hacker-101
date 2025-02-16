@@ -26,10 +26,10 @@ After opening the page source, I carefully examined the HTML content to identify
 
  Step 3: Submitting the Flag
 With the flag found in the HTML comments, I copied it and submitted it to complete the challenge:
-Visiual 
-```
 
-```
+Visiual 
+![image](https://github.com/user-attachments/assets/13445638-460a-4dc0-b55a-9549868edbea)
+
 
  Lessons Learned
 - Always check the page source for hidden flags or comments.
