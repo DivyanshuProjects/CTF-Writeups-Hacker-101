@@ -98,7 +98,7 @@ If the request still fails, consider:
 
  Visual Representation
 
-*Below is an image showing the request and response from Burp Suite or terminal output:*
+*Below is an image showing the request and response from  terminal output:*
 
 ![image](https://github.com/user-attachments/assets/27aa791d-241c-4282-ac2b-f012c79b2a21)
 
