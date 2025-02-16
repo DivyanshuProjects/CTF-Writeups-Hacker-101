@@ -8,33 +8,30 @@
 
  Approach & Solution
 
- Step 1: Inspecting the Page Source
-Since the challenge hint suggests looking at the source of the page, the first step was to open the website and inspect its HTML source code.
+ 🔎 Step 1: Identifying an Unused Image File
+While inspecting the page source, I noticed a reference to an image file:
 
-- In most browsers, this can be done by right-clicking on the page and selecting View Page Source or by pressing `Ctrl + U`.
-
- Step 2: Searching for Hidden Elements
-After opening the page source, I carefully examined the HTML content to identify anything out of the ordinary.
-
-- Many CTF challenges hide flags in HTML comments.
-- Using `Ctrl + F`, I searched for terms like flag, ctf, or hidden.
-- In this case, the following comment was found within the source:
-
-```html
-<!-- Flag0: FLAG{^FLAG^9da151eb01d932ddc00921ba124c8acc11beb56ef06070768cab9fd461deb1d0$FLAG$} -->
+```ini
+src="background.png"
 ```
+However, the page didn’t display any background image, which seemed suspicious.
 
- Step 3: Submitting the Flag
-With the flag found in the HTML comments, I copied it and submitted it to complete the challenge:
+ 🔎 Step 2: Accessing the Hidden Image
+I manually accessed the file by appending `background.png` to the URL:
 
-Visiual 
-![image](https://github.com/user-attachments/assets/13445638-460a-4dc0-b55a-9549868edbea)
-
+```bash
+https://example.com/background.png
+```
+💡 Boom! The flag was inside the image file.
 
  Lessons Learned
-- Always check the page source for hidden flags or comments.
-- Use browser developer tools (`Ctrl + Shift + I` or `F12`) to analyze elements, network requests, and hidden scripts.
-- Searching within the HTML can quickly reveal hidden information.
+- Always check for hidden media files in the page source.
+- Manually test file URLs to uncover hidden content.
+- Developer tools are your best friend (`Ctrl + Shift + I` or `F12`).
+
+Visiual : 
+![image](https://github.com/user-attachments/assets/772081b7-dae4-4973-ba6c-a12fb5676133)
+
 
  Conclusion
 This challenge was a great introduction to web-based CTF challenges, emphasizing the importance of understanding how web pages are structured and how developers may leave hints in the source code.
