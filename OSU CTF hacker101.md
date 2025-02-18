@@ -1,4 +1,10 @@
- OSU CTF - Web Challenge (Moderate)
+ OSU CTF - Web Challenge 
+ Challenge Overview  
+
+- Challenge Name: Trivial  
+- Category: Web  
+- Difficulty: Moderate  
+- Objective: Exploit a vulnerable web application to gain admin privileges and retrieve the flag.  
 
  Initial Steps
 I started by attempting an SQL injection on the login page using the following payload:
