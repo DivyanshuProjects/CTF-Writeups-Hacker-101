@@ -60,6 +60,9 @@ console.log(window.staff.admin);
 staff.admin = true;
 setupLinks();
 ```
+![Screenshot (5)](https://github.com/user-attachments/assets/26e6016e-3884-475a-b3d6-928d564a30b7)
+
+
 Now, I was able to click on student names.
 
  Finding the Encoded String
@@ -79,6 +82,11 @@ I replaced `Nancie_Brett` with `Natasha_Drew`, encoded it in Base64, and updated
 ```
 I then changed all scores to ‘A’ and clicked on `Update Record`.
 
- Capturing the Flag
+ Capturing the Flag 
+Flag : *FLAG^f91b0d22ed751f02a7ebd81acc0411163949204eaf6a786c9581f29d8a5ec41c$FLAGS 
+
 After updating the record, the flag popped up, marking the successful completion of the challenge!
+
+![Screenshot 2025-02-17 224635](https://github.com/user-attachments/assets/b892f777-94b1-465f-a0c6-06b24058696e)
+
 
