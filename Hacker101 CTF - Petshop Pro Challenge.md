@@ -26,6 +26,9 @@ The first vulnerability exists in the Add to Cart and Payment functionality. Whi
 - Always enforce server-side validation to prevent such exploits.
 - Implement hash-based verification or digital signatures to detect price tampering.
 
+
+![Screenshot (7)](https://github.com/user-attachments/assets/f9a623a6-d98d-4b8a-ae74-dd35d75990e4)
+
 ---
 
  🏁 Flag 2 - Brute Force Login Attack 🔑🚪
@@ -47,6 +50,9 @@ I initially attempted an SQL Injection (SQLi), but it was well-secured against d
 ```
 your_IP/edit?id=0 or 1
 ```
+
+![Screenshot 2025-02-21 104113](https://github.com/user-attachments/assets/2df22ff6-ab8d-499d-b3b4-da1ad5662413)
+
 This simple trick provides direct access to internal admin functionalities without requiring login credentials!
 
  🔥 Key Takeaways:
