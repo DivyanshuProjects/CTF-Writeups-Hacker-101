@@ -30,6 +30,7 @@ This CMS allows users to create new pages by specifying a heading and content. I
 - Always sanitize user inputs before rendering them.
 - Implement Content Security Policy (CSP) to prevent JavaScript execution.
 - Escape special characters to mitigate XSS attacks.
+![image](https://github.com/user-attachments/assets/93a8cadd-4e47-4695-a122-2b06584021d5)
 
 ---
 
@@ -50,6 +51,9 @@ After creating a page, I noticed my page ID was `10`. However, only three pages 
 - Implement UUIDs instead of predictable numeric IDs.
 - Always check user authorization before displaying sensitive data.
 
+  ![image](https://github.com/user-attachments/assets/07a26cdb-9fcc-40b1-9fb6-d566b94ee2d3)
+
+
 ---
 
  🏁 Flag 3 - SQL Injection in Page Editing 🏗️💀
@@ -67,6 +71,7 @@ I suspected SQL Injection, so I tried adding a single quote (`'`) after the page
    ```
 3. Boom! An SQL error appeared, confirming a vulnerability.
 4. 🎉 Flag Captured!
+![image](https://github.com/user-attachments/assets/f334f805-7f9c-431d-ac52-3ec82ba65650)
 
  🔥 Key Takeaways:
 - Use prepared statements to prevent SQLi.
@@ -84,6 +89,10 @@ On one of the pages, I noticed a button feature. Since the application didn’t 
    ```html
    <button onclick=alert('xss')>Click Me</button>
    ```
+
+![image](https://github.com/user-attachments/assets/1dd4f4dd-57f2-49ed-a20d-c3eb080fd476)
+
+   
 3. Save the changes and navigate back to the homepage.
 4. Boom! The payload executed, confirming another Stored XSS vulnerability.
 5. 🎉 Flag Captured!
