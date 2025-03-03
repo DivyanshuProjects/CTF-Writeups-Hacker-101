@@ -31,6 +31,10 @@ This payload allows us to log in successfully. However, we are prompted with a m
 > "You got logged in, congrats! Do you have the real username and password? If not, might want to do that!"
 
 This suggests that further enumeration might be required to retrieve actual credentials.
+Now that we’re logged in, we can now see “Private Page”, which will reveal the flag!
+
+![image](https://github.com/user-attachments/assets/21fd74c4-29b5-471e-9130-d0346a923fe3)
+
 
 ---
 
@@ -42,6 +46,7 @@ In Micro-CMS v1, we had the ability to edit and create pages, which is no longer
  Exploitation
 Using Burp Suite or a simple cURL request, we send a POST request to `/page/edit/1` instead of a GET request:
 
+
 ```http
 POST /page/edit/1 HTTP/1.1
 Host: target-site.com
@@ -50,8 +55,12 @@ Content-Type: application/x-www-form-urlencoded
 page_content=NewContent
 ```
 
+
  Outcome
 Upon executing this, we successfully retrieve Flag 1.
+
+![Screenshot 2025-03-02 225708](https://github.com/user-attachments/assets/bfe611b2-62d0-4c70-b491-9474178953cf)
+
 
 ---
 
@@ -75,9 +84,17 @@ Using the saved request, we run SQLMap to extract credentials:
 sqlmap -r h.txt --batch --proxy="http://127.0.0.1:8080" --random-agent -p username --level=2 --risk=2 --dump --force-ssl
 ```
 
+
+
+
+
+
  Outcome
 - The command dumps the database, revealing the username and password.
 - Using these credentials, we log in and retrieve Flag 2.
+
+  
+![Screenshot 2025-03-03 142800](https://github.com/user-attachments/assets/3fb988cd-a3f1-46ac-afff-d20bb570c782)
 
 ---
 
