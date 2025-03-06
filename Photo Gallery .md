@@ -64,6 +64,7 @@ sqlmap -u https://<IP>/fetch?id=1 -dump --level=5 --risk=3 --banner --batch --db
 
 Executing the `sqlmap` command successfully enumerated the database and revealed two tables: `albums` and `photos`. Dumping data from the `photos` table, I discovered the first flag.
 
+![image](https://github.com/user-attachments/assets/8bd5e962-7870-4741-afe3-5dcd9489d0e7)
 
 
 ---
