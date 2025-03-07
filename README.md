@@ -1,6 +1,6 @@
 # Hacker101 CTF Writeups
 
-Welcome to my writeup repository for Hacker101 CTF challenges! This repository contains detailed walkthroughs and solutions for various challenges from the Hacker101 CTF platform.
+Welcome to my writeup repository for Hacker101 CTF challenges!  Hey everyone! I'm Divyanshu Kumar, a cybersecurity enthusiast passionate about Capture The Flag (CTF) challenges. This repository contains my detailed walkthroughs and solutions for various challenges from the Hacker101 CTF platform. 
 
 ## About
 This repository is dedicated to documenting my journey in cybersecurity by solving CTF challenges. Each writeup includes:
