@@ -33,6 +33,10 @@ $file = fopen ("upload2.php", "w"); echo fwrite($file, '<html><form action="uplo
 ```
 Using this technique, I successfully bypassed admin approval and retrieved the flag directly.
 
+
+![image](https://github.com/user-attachments/assets/7c96a5ac-7eec-4c93-b7a1-0a81d89de35d)
+
+
 ---
 
  FLAG 1: Admin Authentication Bypass
@@ -64,9 +68,13 @@ Since authentication is usually enforced here, I tested removing 'auth' from the
 ```
 ?page=admin.inc
 ```
-And just like that—I was logged in as admin!
+And just like that—I was logged in as admin! and at the end of page got the flag
 
 Now, I had the power to approve comments, which meant I could approve my previous PHP code injection and use it in the next step.
+
+
+![Screenshot 2025-03-07 153901](https://github.com/user-attachments/assets/9208dc7f-9136-4e72-b8fa-bb6a93181389)
+
 
 ---
 
@@ -93,6 +101,10 @@ I submitted a comment containing:
 <?php echo file_get_contents('index.php'); ?>
 ```
 After approving the comment and navigating to `localhost/index`, I checked the developer tools (F12) and saw that my PHP code had executed successfully, revealing FLAG2.
+
+
+
+![Screenshot 2025-03-07 174325](https://github.com/user-attachments/assets/9697dd68-16b2-4a7d-bdf9-1e12a4783ccf)
 
 ---
 
