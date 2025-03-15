@@ -90,6 +90,8 @@ After confirming path traversal, the next goal was to execute arbitrary PHP code
 
  🔑 Key Takeaways
 ✅ Path Traversal vulnerabilities can expose sensitive files if upload paths are not properly restricted.
+
 ✅ Metadata Manipulation is a sneaky way to bypass file format restrictions and execute arbitrary code.
+
 ✅ Burp Suite is a must-have tool for web security testing, allowing interception, manipulation, and automation.
 
