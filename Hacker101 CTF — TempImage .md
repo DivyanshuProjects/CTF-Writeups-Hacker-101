@@ -51,6 +51,10 @@ The challenge started with a file upload feature, but only PNG images were allow
 
 📌 Outcome: The modified request successfully uploaded the file outside the `/files` directory, and boom! The first flag was captured! 🎉
 
+
+![image](https://github.com/user-attachments/assets/3b7723e2-e96f-4f6e-80dd-5e0a90d85de7)
+
+
 ---
 
  🔥 FLAG 1: PHP Code Injection via Metadata
@@ -79,14 +83,13 @@ After confirming path traversal, the next goal was to execute arbitrary PHP code
 
 📌 Outcome: The server executed my PHP script, exposing `index.php`. A quick search for "flag", and boom! The second flag was captured! 🎉
 
+![image](https://github.com/user-attachments/assets/51717996-f8ea-4ee4-8a34-994c54a16ed6)
+
+
 ---
 
  🔑 Key Takeaways
 ✅ Path Traversal vulnerabilities can expose sensitive files if upload paths are not properly restricted.
 ✅ Metadata Manipulation is a sneaky way to bypass file format restrictions and execute arbitrary code.
 ✅ Burp Suite is a must-have tool for web security testing, allowing interception, manipulation, and automation.
-
-💡 Keep learning, keep hacking! 🚀 Let’s connect and discuss more CTF strategies!
-
-CyberSecurity CTF Hacking BugBounty EthicalHacking CaptureTheFlag InfoSec WebSecurity PenTesting BurpSuite WebExploitation
 
