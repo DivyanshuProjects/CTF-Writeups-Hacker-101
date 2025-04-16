@@ -1,4 +1,3 @@
-Hi! I'm Divyanshu, and I’m passionate about cybersecurity, reverse engineering, and exploring the internals of mobile apps. In this blog, I’ll walk you through my approach to solving the H1 Thermostat Android CTF, where we had to reverse an APK to uncover a hidden flag. Whether you're just getting into CTFs or have some experience, this writeup is for you
 
 🧩 Challenge Overview
 CTF Name: H1 Thermostat
