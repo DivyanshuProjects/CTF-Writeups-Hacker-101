@@ -1,6 +1,6 @@
-
- Challenge Overview
+🧩 Challenge Overview
 CTF Name: H1 Thermostat
+
 Platform: Android
 Goal: Find the flag hidden within the APK file.
 
@@ -68,11 +68,10 @@ java
 Copy
 Edit
 public class PayloadRequest {
-    public static final String FLAG = "flag{***********}";
+public static final String FLAG = “flag{***********}”;
 }
 Bingo! That was our flag.
-
-![Screenshot 2025-04-16 235215](https://github.com/user-attachments/assets/8d4d2490-c034-43d2-97f0-cdb20b57e5f8)
+![Screenshot 2025-04-16 235215](https://github.com/user-attachments/assets/3aca1f62-68da-428a-a906-904784f943a7)
 
 
 💡 What You Can Learn from This CTF
@@ -87,14 +86,14 @@ Think like a developer — if you had to hardcode something, where would you hid
 🧰 Alternative Tools to Try
 Here are a few other tools you might want to experiment with for deeper analysis:
 
-apktool – great for decoding resources and manifest files.
+apktool — great for decoding resources and manifest files.
 
-MobSF (Mobile Security Framework) – an all-in-one automated analysis tool.
+MobSF (Mobile Security Framework) — an all-in-one automated analysis tool.
 
-Frida or Xposed – for runtime dynamic analysis if static doesn't cut it.
+Frida or Xposed — for runtime dynamic analysis if static doesn’t cut it.
 
 📝 Final Thoughts
-This was a fun and educational challenge that tested basic Android reverse engineering skills. If you're new to mobile CTFs, this is a great starting point. And remember — always think like both an attacker and a developer.
+This was a fun and educational challenge that tested basic Android reverse engineering skills. If you’re new to mobile CTFs, this is a great starting point. And remember — always think like both an attacker and a developer.
 
 Stay curious, stay persistent, and happy hacking!
 — Divyanshu
