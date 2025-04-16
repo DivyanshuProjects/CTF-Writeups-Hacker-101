@@ -1,5 +1,5 @@
 
-🧩 Challenge Overview
+ Challenge Overview
 CTF Name: H1 Thermostat
 Platform: Android
 Goal: Find the flag hidden within the APK file.
